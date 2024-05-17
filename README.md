@@ -33,7 +33,86 @@ Open the `style.css` file to customize the appearance of the chessboard, pieces,
 
 ## Step 6: Customize the Chessboard Controls
 
-In the `script.js` file, you can customize the behavior of the chessboard controls. This includes functionalities such as toggling animations, showing/hiding board borders, and enabling/disabling body scrolling.
+Open the `script.js` file, where you'll find JavaScript code responsible for controlling various aspects of the chessboard. Below are some common customizations you can make:
+
+#### 1. Toggle Animations
+
+By default, the chessboard animations are enabled. You can customize this behavior to toggle animations on or off based on user preference. Locate the relevant code block responsible for animation control and modify it as follows:
+
+```javascript
+// Locate the code block responsible for animation control
+var animationsEnabled = true; // Change to false to disable animations initially
+
+// Function to toggle animations
+function toggleAnimations() {
+    animationsEnabled = !animationsEnabled; // Toggle animations state
+    if (animationsEnabled) {
+        // Re-enable animations
+        document.documentElement.classList.remove("noanimations");
+    } else {
+        // Disable animations
+        document.documentElement.classList.add("noanimations");
+    }
+}
+
+// Attach event listener to a control button or element to trigger the toggleAnimations() function
+document.getElementById("toggleAnimationsButton").addEventListener("click", toggleAnimations);
+```
+
+#### 2. Show/Hide Board Borders
+
+You can provide users with the option to show or hide the borders of the chessboard. Modify the code to implement this functionality:
+
+```javascript
+// Locate the code block responsible for board border control
+var bordersVisible = true; // Change to false to hide borders initially
+
+// Function to toggle board borders
+function toggleBoardBorders() {
+    bordersVisible = !bordersVisible; // Toggle borders state
+    if (bordersVisible) {
+        // Show board borders
+        document.documentElement.classList.remove("noborders");
+    } else {
+        // Hide board borders
+        document.documentElement.classList.add("noborders");
+    }
+}
+
+// Attach event listener to a control button or element to trigger the toggleBoardBorders() function
+document.getElementById("toggleBordersButton").addEventListener("click", toggleBoardBorders);
+```
+
+#### 3. Enable/Disable Body Scrolling
+
+You can allow or prevent body scrolling while interacting with the chessboard. Customize the code to implement this feature:
+
+```javascript
+// Locate the code block responsible for body scrolling control
+var scrollingEnabled = true; // Change to false to disable body scrolling initially
+
+// Function to toggle body scrolling
+function toggleBodyScrolling() {
+    scrollingEnabled = !scrollingEnabled; // Toggle scrolling state
+    if (scrollingEnabled) {
+        // Enable body scrolling
+        document.documentElement.classList.remove("noscroll");
+    } else {
+        // Disable body scrolling
+        document.documentElement.classList.add("noscroll");
+    }
+}
+
+// Attach event listener to a control button or element to trigger the toggleBodyScrolling() function
+document.getElementById("toggleScrollingButton").addEventListener("click", toggleBodyScrolling);
+```
+
+#### 4. Additional Customizations
+
+You can further customize the code to add new controls, change control button styles, or implement additional functionalities based on your requirements.
+
+
+
 
 ## Step 7: Test and Deploy
 
