@@ -1,5 +1,10 @@
 # Chess-Model-Website
-A model of chess board along with its pieces using html-css-javacript. The chess pieces are not programed to function.
+
+A model of a chessboard along with its pieces using HTML, CSS, and JavaScript. **The chess pieces are not programmed to function.**
+
+## Disclaimer
+
+This project contains code sourced from the internet. **I do not claim ownership of the original code.** My contribution is making it easily accessible, organizing the files, and providing a structured guide on how to customize and modify the project.
 
 ---
 
@@ -35,7 +40,7 @@ Open the `style.css` file to customize the appearance of the chessboard, pieces,
 
 Open the `script.js` file, where you'll find JavaScript code responsible for controlling various aspects of the chessboard. Below are some common customizations you can make:
 
-#### 1. Toggle Animations
+### 1. Toggle Animations
 
 By default, the chessboard animations are enabled. You can customize this behavior to toggle animations on or off based on user preference. Locate the relevant code block responsible for animation control and modify it as follows:
 
@@ -59,7 +64,7 @@ function toggleAnimations() {
 document.getElementById("toggleAnimationsButton").addEventListener("click", toggleAnimations);
 ```
 
-#### 2. Show/Hide Board Borders
+### 2. Show/Hide Board Borders
 
 You can provide users with the option to show or hide the borders of the chessboard. Modify the code to implement this functionality:
 
@@ -83,7 +88,7 @@ function toggleBoardBorders() {
 document.getElementById("toggleBordersButton").addEventListener("click", toggleBoardBorders);
 ```
 
-#### 3. Enable/Disable Body Scrolling
+### 3. Enable/Disable Body Scrolling
 
 You can allow or prevent body scrolling while interacting with the chessboard. Customize the code to implement this feature:
 
@@ -107,16 +112,12 @@ function toggleBodyScrolling() {
 document.getElementById("toggleScrollingButton").addEventListener("click", toggleBodyScrolling);
 ```
 
-#### 4. Additional Customizations
+### 4. Additional Customizations
 
 You can further customize the code to add new controls, change control button styles, or implement additional functionalities based on your requirements.
 
-
-
-
 ## Step 7: Test and Deploy
 
-Test your 3D chessboard locally by opening the HTML file in a web browser. Ensure all functionalities work as expected. Once satisfied, deploy your project to a web server to share it with others.
+Test your chessboard locally by opening the HTML file in a web browser. Ensure all functionalities work as expected. Once satisfied, deploy your project to a web server or GitHub Pages to share it with others.
 
 ---
-
